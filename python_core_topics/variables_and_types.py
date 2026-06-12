@@ -18,6 +18,7 @@ future_plan = "My future is to go to Germany"
 print("Name:", name)
 print("University:", university)
 print("Goal:", future_plan)
+print(f"Future Plan: {future_plan}")   # f_ string we can use it when we wanna to print a str and variables; 
 
 # --- Boolean (True / False) ---
 is_student = True
