@@ -64,8 +64,8 @@ print("Squares:", squares)
 
 # --- while with user-like simulation ---
 attempts = 0
-password = "xidian2024"
-guesses = ["wrong1", "wrong2", "xidian2024"]  # simulating input
+password = "adilshah@12"
+guesses = ["wrong1", "wrong2", "adilshah12"]  # simulating input
 
 for guess in guesses:
     attempts += 1
