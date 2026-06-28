@@ -1,0 +1,4 @@
+Python File Handling Practice
+Line 2: Learning to write files
+Line 3: This is beginner level
+Line 4: Added with append mode
