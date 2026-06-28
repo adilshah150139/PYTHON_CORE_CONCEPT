@@ -54,12 +54,11 @@ else:
     print(f"your attendance is: {attendance}, U can't give exam")
 
 
-
 # --- One-liner (ternary or composed form syntax) ---
-
 status = "pass" if score >= 50 else "fail"
 print("status:", status)
-# --- in operator ---
+
+# --- small application using operator ---
 allowed_users = ["admin", "professor", "ta"]
 current_user = "admin"
 if current_user in allowed_users:
