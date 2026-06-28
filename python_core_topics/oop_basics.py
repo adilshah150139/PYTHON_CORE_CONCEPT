@@ -7,7 +7,8 @@
 class Student:
     # __init__ runs when you create a new object
     def __init__(self, name, age, major):
-        self.name = name       # attributes
+        # attributes
+        self.name = name       # INSTANCE variable - unique
         self.age = age
         self.major = major
         self.grades = []
@@ -24,8 +25,8 @@ class Student:
             return 0
         return round(sum(self.grades) / len(self.grades), 2)
 
-    # __str__: what gets printed when you print the object
-    def __str__(self):
+    # __str__: what gets printed when you print the object 
+    def __str__(self):      # it's a special or 'dunder' method in Python that controls how an object is represented as a string.
         return f"Student({self.name}, GPA: {self.get_gpa()})"
 
 
@@ -58,20 +59,21 @@ grad.introduce()
 
 # --- Class variable (shared by all objects) ---
 class Counter:
-    count = 0   # class variable
+    count = 0   # class variable, directly defined - shared
 
     def __init__(self):
-        Counter.count += 1
+        Counter.count += 1 
 
     @classmethod
     def get_count(cls):
         return cls.count
 
-
 c1 = Counter()
 c2 = Counter()
 c3 = Counter()
 print(f"\nTotal Counter objects created: {Counter.get_count()}")
+
+
 
 # --- Simple Bank Account example ---
 class BankAccount:
